@@ -115,7 +115,7 @@ public class MicrosoftTranslationProvider extends AbstractTranslationProvider im
             String bodyAsString;
             long callTime = System.currentTimeMillis();
             try {
-                returnCode = httpClientService.getHttpClient().executeMethod(method);
+                returnCode = httpClientService.getHttpClient(accessTokenUrl).executeMethod(method);
                 bodyAsString = method.getResponseBodyAsString();
                 if (returnCode != HttpStatus.SC_OK) {
                     throw new TranslationException(Messages.getWithArgs(ResourceBundles.get(module, uiLocale),
@@ -170,7 +170,7 @@ public class MicrosoftTranslationProvider extends AbstractTranslationProvider im
         String translatedText;
         try {
             try {
-                returnCode = httpClientService.getHttpClient().executeMethod(method);
+                returnCode = httpClientService.getHttpClient(translateUrl).executeMethod(method);
             } catch (Exception e) {
                 throw new TranslationException(Messages.get(module,"siteSettings.translation.microsoft.failedToCallService",uiLocale));
             }
@@ -248,7 +248,7 @@ public class MicrosoftTranslationProvider extends AbstractTranslationProvider im
         try {
             try {
                 method.setRequestEntity(new StringRequestEntity(body.toString(), "text/xml", "UTF-8"));
-                returnCode = httpClientService.getHttpClient().executeMethod(method);
+                returnCode = httpClientService.getHttpClient(translateArrayUrl).executeMethod(method);
             } catch (Exception e) {
                 throw new TranslationException(Messages.get(module,"siteSettings.translation.microsoft.failedToCallService",uiLocale));
             }
