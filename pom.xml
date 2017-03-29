@@ -52,7 +52,7 @@
         <version>7.1.2.3</version>
     </parent>
     <artifactId>translation</artifactId>
-	<version>7.1.2</version>
+	<version>7.1.3-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <name>Jahia Translation Providers</name>
     <description>Registers providers for Translation Service</description>
@@ -60,7 +60,7 @@
         <connection>scm:git:git@github.com:Jahia/translation.git</connection>
         <developerConnection>scm:git:git@github.com:Jahia/translation.git</developerConnection>
         <url>scm:git:git@github.com:Jahia/translation.git</url>
-      <tag>7_1_2</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <properties>
