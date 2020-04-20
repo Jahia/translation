@@ -65,6 +65,7 @@
 
     <properties>
         <jahia-depends>default,siteSettings</jahia-depends>
+        <jahia-module-signature>MC0CFQCRCSJvJSM1Zompj2iJTvGMeH4sngIUGOZjatQA9T8M5CpCDJGl3/UJr/k=</jahia-module-signature>
     </properties>
 
     <repositories>
