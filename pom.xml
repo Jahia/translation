@@ -52,7 +52,7 @@
         <version>8.0.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>translation</artifactId>
-	<version>8.0.0.0-SNAPSHOTNAPSHOT</version>
+	<version>8.0.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <name>Jahia Translation Providers</name>
     <description>Registers providers for Translation Service</description>
